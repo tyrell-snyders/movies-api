@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
-
+const route = require('./routes/routes.js');
 // TODO: create a default route that returns hello world
 //  HINT: get
+app.use('/', route);
 
-app.get("/", (req, res) => {
-    res.send("Hello World")
-})
+// Get trending movies
+app.use('/trending', route);
 
 // This uses an environment variable to set the port. If the variable cannot be found,
 // it will default to 8080
