@@ -4,7 +4,7 @@ async function GetTrending(req, res) {
     method: 'GET',
         headers: {
             accept: 'application/json',
-            Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiNmVhNDU4ZjAzM2UwZDRlNDc4ODExY2Q0ODJlMzk1NCIsIm5iZiI6MTczMDM3NjYyNi44MTc3MjcsInN1YiI6IjY3MjM3MjRjZWViMGM1ZWYzYjliZDdhYiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.yXTu5SOTVTfRDaPJ49kDbQvZ44W_v2yP3RhBhClZgjk'
+            Authorization: `Bearer ${process.env.ACCESS_KEY}`
         }
     };
 
